@@ -1,3 +1,4 @@
+using System.Diagnostics.Metrics;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Microservice1.API.Controllers
@@ -6,6 +7,8 @@ namespace Microservice1.API.Controllers
     [Route("[controller]")]
     public class WeatherForecastController : ControllerBase
     {
+        public static int counter =0;
+
         private static readonly string[] Summaries = new[]
         {
             "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
@@ -28,6 +31,13 @@ namespace Microservice1.API.Controllers
                 Summary = Summaries[Random.Shared.Next(Summaries.Length)]
             })
             .ToArray();
+        }
+
+        [HttpPost]
+        public IActionResult Post()
+        {
+            counter++;
+            return Ok(counter);
         }
     }
 }

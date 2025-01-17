@@ -1,0 +1,13 @@
+services:
+  microservice1.api:
+    image: microservice1-image
+    container_name: microservice1-container
+    build:
+      context: .
+      dockerfile: Microservice1.API/Dockerfile
+  microservice2.api:
+    image: microservice2-image
+    container_name: microservice2-container
+    build:
+      context: .
+      dockerfile: Microservice2.API/Dockerfile
