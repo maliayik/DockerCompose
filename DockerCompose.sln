@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35707.178 d17.12
+VisualStudioVersion = 17.12.35707.178
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microservice1.API", "Microservice1.API\Microservice1.API.csproj", "{B2A5654A-FEA9-41AB-9FEA-F307FB17380B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microservice2.API", "Microservice2.API\Microservice2.API.csproj", "{00365530-3671-487F-9989-A6A3BA41ED37}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{B2A5654A-FEA9-41AB-9FEA-F307FB17380B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B2A5654A-FEA9-41AB-9FEA-F307FB17380B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B2A5654A-FEA9-41AB-9FEA-F307FB17380B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00365530-3671-487F-9989-A6A3BA41ED37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00365530-3671-487F-9989-A6A3BA41ED37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00365530-3671-487F-9989-A6A3BA41ED37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00365530-3671-487F-9989-A6A3BA41ED37}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
